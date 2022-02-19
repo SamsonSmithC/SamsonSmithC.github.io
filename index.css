@@ -1,15 +1,27 @@
 body {
   margin: 0px;
+  color: white;
+}
+
+a {
+  color: lightgrey !important;
+  text-decoration: none !important;
 }
 
 #titleBar {
   width: 100%;
   top: 0px;
   left: 0px;
-  padding-top: 1px;
-  padding-bottom: 1px;
 
-  background-color: red;
+  padding-top: 16px;
+  padding-bottom: 1px;
+  padding-left: 16px;
+
+  background-color: black;
+
+  border-bottom-style: solid;
+  border-bottom-width: 4px;
+  border-color: grey;
 }
 
 .grid-container {
@@ -20,15 +32,17 @@ body {
   position: -webkit-sticky; /* Safari */
   position: sticky;
   will-change: transform;
-
-  padding-top: 1px;
-  width: 100%;
-  top: 0px;
   z-index: 999;
 
-  background-color: green;
+  width: 100%;
+  top: 0px;
+
+  padding-top: 1px;
+
+  background-color: black;
 }
 
 #navBar .grid-container {
   grid-template-columns: 15% 15% 15% auto;
+  text-align: center;
 }
