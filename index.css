@@ -9,24 +9,34 @@ a {
 }
 
 #titleBar {
-  width: 100%;
+  width: auto;
   top: 0px;
   left: 0px;
 
   padding-top: 16px;
   padding-bottom: 1px;
   padding-left: 16px;
+  padding-right: 16px;
 
-  background-color: black;
+  background-color: rgb(30, 30, 30);
 
   border-bottom-style: solid;
-  border-bottom-width: 4px;
-  border-color: grey;
+  border-bottom-width: 0px;
+  border-color: white;
+}
+
+#titleBar .grid-container {
+  grid-template-columns: auto auto;
+}
+
+#titleBar h3 {
+  text-align: right;
 }
 
 .grid-container {
   display: grid;
 }
+
 
 #navBar {
   position: -webkit-sticky; /* Safari */
@@ -39,10 +49,30 @@ a {
 
   padding-top: 1px;
 
-  background-color: black;
+  background-color: rgb(50, 50, 50);
+
+  border
 }
 
 #navBar .grid-container {
-  grid-template-columns: 15% 15% 15% auto;
+  grid-template-columns: auto auto;
   text-align: center;
+}
+
+
+
+.navOn {
+  margin: 0px;
+  padding: 3px;
+  background-color: rgb(200, 200, 200);
+  color: black;
+}
+
+.navOff {
+  margin: 0px;
+  padding: 3px;
+}
+
+.navOff:hover {
+  background-color: rgb(70, 70, 70);
 }
